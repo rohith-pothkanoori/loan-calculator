@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="query">
+        <h1 class="heading">Loan Calculator</h1>
+        <form>
+          <div class="form-group">
+            <span>$</span
+            ><input
+              type="number"
+              class="loan-amount"
+              placeholder="Loan Amount"
+            />
+          </div>
+          <div class="form-group">
+            <span>%</span
+            ><input type="number" class="interest" placeholder="Interest" />
+          </div>
+          <div class="form-group">
+            <input type="number" class="years" placeholder="Years To Repay" />
+          </div>
+          <input type="submit" value="Calculate" class="btn btn-submit" />
+        </form>
+      </div>
+      <!-- loader -->
+      <div class="loader">
+        <img src="./img/Spinner-1s-200px.gif" alt="" />
+      </div>
+      <div class="result">
+        <h2>Result</h2>
+        <div class="form-group2">
+          <span>Monthly Payment</span
+          ><input type="number" class="m-payment" disabled />
+        </div>
+        <div class="form-group2">
+          <span>Total Payment</span
+          ><input type="number" class="t-payment" disabled />
+        </div>
+        <div class="form-group2">
+          <span>Total Interest</span
+          ><input type="number" class="resultall" disabled />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
